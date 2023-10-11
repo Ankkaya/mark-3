@@ -4,11 +4,11 @@ export default defineNuxtConfig({
     highlight: {
       theme: {
         // Default theme (same as single string)
-        default: "dracula",
+        default: 'dracula',
       },
     },
   },
-  css: ["~/assets/css/main.css"],
+  css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -18,12 +18,6 @@ export default defineNuxtConfig({
   // image: {
   //   dir: "assets/img",
   // },
-  modules: [
-    "@nuxt/content",
-    "@vueuse/motion/nuxt",
-    "@nuxt/image-edge",
-    "@nuxthq/studio",
-    "@vue-email/nuxt",
-  ],
-  extends: ["nuxt-umami"],
-});
+  modules: ['@nuxt/content', '@vueuse/motion/nuxt', '@nuxt/image-edge', '@nuxthq/studio'],
+  extends: ['nuxt-umami'],
+})
